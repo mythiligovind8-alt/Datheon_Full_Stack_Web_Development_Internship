@@ -1,1 +1,60 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shopping Store 📢</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Shopping Store</h1>
+        <button id="cartBtn">🛒 Cart (0)</button>
+    </header>
+
+    <main>
+        <h2>Our Products</h2>
+        <div classs="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 search products">
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="electronics">Electronics</button>
+            <button class="filter-btn" data-category="jewelery">Jewelry</button>
+            <button class="filter-btn" data-category="men's clothing">Men</button>
+            <button class="filter-btn" data-category="women's clothing">Women</button>
+        </div>
+
+        <div id="productContainer"></div>
+        <!-- Shopping Cart Drawer -->
+<div id="cartDrawer" class="cart-drawer">
+
+    <div class="cart-header">
+        <h2>🛒 Your Cart</h2>
+        <button id="closeCart">✖</button>
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-summary">
+        <p>Subtotal: $<span id="subtotal">0.00</span></p>
+        <p>Tax: $<span id="tax">0.00</span></p>
+        <p>Shipping: $<span id="shipping">0.00</span></p>
+        <h3>Total: $<span id="total">0.00</span></h3>
+
+        <button id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+
+</div>
+
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
